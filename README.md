@@ -20,6 +20,17 @@ Install dependencies:
 Start the Node.js server:
  ### `npm start`
 
+## Setup PostgreSQL
+- Open pgAdmin 4 and create a new PostgreSQL database.
+- Execute SQL commands specified in the /server/init.sql file to set up tables, schemas, or initial data.
+- In the /server folder, create a file named .env.
+- Inside the .env file, provide configuration details for PostgreSQL using the following variables:
+  - PGUSER: PostgreSQL username
+  - PGHOST: PostgreSQL host
+  - PGDATABASE: Name of the PostgreSQL database
+  - PGPASSWORD: PostgreSQL password
+  - PGPORT: PostgreSQL portAdd in PGUSER, PGHOST, PGDATABASE, PGPASSWORD, PGPORT in .env file
+
 
 
 # Run the App Using Docker
